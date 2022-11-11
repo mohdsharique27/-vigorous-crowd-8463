@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRENDING|ONE</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <div>
+            <img class="logo" src="images/WEB LOGO.png" alt="">
+            <h4 class="changecolor">WOMEN</h4>
+            <h4 class="changecolor">MEN</h4>
+            <h4 class="changecolor">BEAUTY</h4>
+            <h4 class="changecolor">KIDS</h4>
+            <h4 class="changecolor">HOME</h4>
+            <h4 class="changecolor">DESIGNERS</h4>
+            <h4 class="changecolor">COMMUNITY</h4>
+            <h4 class="changecolor">SALE</h4>
+            <select id="filter" onchange="handleSort()">
+                <option value="LTH">Low to High</option>
+                <option value="HTL">High to Low</option>
+            </select>
+        </div>
+        <div>
+            <img src="https://cdn.modesens.com/static/img/20200612shopping_bag2.svg" alt="">
+            <img src="images/account.svg" alt="">
+            <input id="search" type="text" placeholder="Search">
+
+        </div>
+    </div>
+    <div class="top-section">
+        <img class="myslideshow"
+            src="https://modesens.com/banner/13930/getimg/?img=%2Fbanner%2F20221107-modesens-Double11-1140x400-EN_1667706245.jpg"
+            alt="">
+        <img class="myslideshow"
+            src="https://modesens.com/banner/13892/getimg/?img=%2Fbanner%2F20221102-modesens-Anthropologie-1140x400-H-EN.jpg"
+            alt="">
+    </div>
+
+    <div class="partner-heading">
+        <h1>New Partners and Designers</h1>
+        <p>Check out the new retail partners and brands who just joined the ModeSens family.</p>
+    </div>
+
+    <div id="partners"></div>
+    <h1 id="offer-heading"> SPEACIAL OFFERS
+        <hr>
+    </h1>
+
+    <div class="offer-section">
+        <div>
+            <img src="https://imgs.search.brave.com/PdXrjuUbaT-aN_-FsxQ8HVWpZEtzFTc4SXAfKWbrLwo/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9hY291/c3RpY2EuY29tL2lt/Zy9hc3NldC9iV0Zw/Ymk5cGJXY3ZZV052/ZFhOMGFXTmhMV2h2/Ykdsa1lYa3RjMkZz/WlMxdVpYY3RkWE5s/Y2k1d2JtYz0_cD1z/ZW8mcz0xOWU2MTk4/Zjk3OTM3MTBiYWNh/ODZmNTI0N2Q4NmI2/MA"
+                alt="">
+        </div>
+        <div>
+            <img src="https://imgs.search.brave.com/D7A8CITj7zMr1oz8bFP6esUuoYR1U_Hf5bs6wN4vBRE/rs:fit:1024:1024:1/g:ce/aHR0cHM6Ly93d3cu/Z3JpZGdpdC5jb20v/Y2RuLzIwMTkvMDkv/YmlnLXJldGFpbC1z/YWxlLXNpZ25zLXBy/aW50YWJsZS5qcGc"
+                alt="">
+        </div>
+        <div>
+            <img src="https://imgs.search.brave.com/BMO9lfQYFXf6hYvSzSsWihj9a0W-8fGUL1-qNCzz8yw/rs:fit:656:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/bFloSHJiSUZidXR2/WjA0Z21iUzhnSGFG/VyZwaWQ9QXBp"
+                alt="">
+        </div>
+    </div>
+    <h1 id="trending"> Trending Now
+        <hr>
+    </h1>
+
+    <div class="trendingProducts"></div>
+    <div class="bottom-section">
+        <div id="left-side">
+            <h1>Download the
+                Trending One App</h1>
+            <p> <b> A seamless experience that takes your style
+                    to the next level</b></p>
+            <button>Download Now</button><br>
+            <img src="https://cdn.modesens.com/static/img/20220826appdownload_en.svg" alt="">
+        </div>
+        <div id="right-side">
+            <h1>Browser Extension</h1>
+            <p> <b> Get timely, accurate product information
+                    every time you browse.</b></p>
+            <button>Download Now</button><br>
+            <img src="https://cdn.modesens.com/static/img/20211109downloadright.png" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <hr>
+        <div id="customer-setion">
+
+            <div class="coustomerCare">
+                <h2>CUSTOMER CARE</h2>
+                <h3>Shopper Protection</h3>
+                <h3>Loyalty Program</h3>
+                <h3>Help Center</h3>
+                <h3>Size Guides</h3>
+                <h3>Contact Us / Feedback</h3>
+                <h3>Shipping / Returns</h3>
+            </div>
+            <div class="coustomerCare">
+                <h2>INFORMATION</h2>
+                <h3>About Us</h3>
+                <h3>Influencer Program</h3>
+                <h3>Partner Stores</h3>
+                <h3>Sitemap</h3>
+            </div>
+            <div class="coustomerCare">
+                <h2>LEGAL</h2>
+                <h3>Terms Of Use</h3>
+                <h3>Disclosure</h3>
+                <h3>Privacy Policy</h3>
+                <h3>Community Guidelines</h3>
+            </div>
+            <div id="app-logo">
+                <h2>CONNECT WITH US</h2>
+                <img src="https://cdn.modesens.com/static/img/20220815download_ios.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220815download_android.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220815down_chromestrore.svg" alt="">
+            </div>
+            <div id="form">
+                <h2>NEWSLETTER SIGN UP</h2>
+                <input type="text" placeholder="Email Address"><br>
+                <hr>
+                <button>SUBMIT</button>
+            </div>
+
+        </div>
+        <p>When you follow our links to visit a brand or retailer’s website or make a purchase, Trending One may earn a
+            commission.</p>
+        <hr>
+        <div id="social-media-section">
+            <div id="left-part">
+                <img class="logo" src="images/WEB LOGO.png" alt="">
+            </div>
+            <div id="right-part">
+                <img src="https://cdn.modesens.com/static/img/20220726Pinterest.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Twitter.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Ins.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Facebook.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Weibo.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Wechat.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Discord.svg" alt="">
+                <img src="https://cdn.modesens.com/static/img/20220726Reddit.svg" alt="">
+            </div>
+        </div>
+    </div>
+   
+
+
+</body>
+
+</html>
+
+<script src="home.js"></script>
+<script src="popup.js"></script>
