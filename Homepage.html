@@ -21,14 +21,15 @@
             <h4 class="changecolor">DESIGNERS</h4>
             <h4 class="changecolor">COMMUNITY</h4>
             <h4 class="changecolor">SALE</h4>
-            <h4 class="changecolor">WHY MODESENS</h4>
+            <select id="filter" onchange="handleSort()">
+                <option value="LTH">Low to High</option>
+                <option value="HTL">High to Low</option>
+            </select>
         </div>
         <div>
             <img src="https://cdn.modesens.com/static/img/20200612shopping_bag2.svg" alt="">
             <img src="images/account.svg" alt="">
-            <img id="search" src="https://cdn.modesens.com/static/img/20200612search_img1.svg" alt=""><span>
-                <h2>Search</h2>
-            </span>
+            <input id="search" type="text" placeholder="Search">
 
         </div>
     </div>
@@ -155,3 +156,4 @@
 </html>
 
 <script src="home.js"></script>
+<script src="popup.js"></script>

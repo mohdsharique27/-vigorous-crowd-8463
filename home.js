@@ -70,10 +70,6 @@ bag.forEach((elem) => {
     let ProPrice = document.createElement("h3");
     ProPrice.innerHTML= " <strong>₹</strong>"+elem.price;
 
-    let ProDescription = document.createElement("p");
-    ProDescription.innerText=elem.description;
-
-
     let ProCategory = document.createElement("p");
     ProCategory.innerText=elem.category;
     
@@ -93,15 +89,26 @@ bag.forEach((elem) => {
         updateImage()
     })
 
-    div.append(ProImage,ProName,ProPrice,ProDescription,ProCategory,cart_btn,nextButton,prevButton);
+    div.append(ProImage,ProName,ProPrice,ProCategory,cart_btn,nextButton,prevButton);
     
     document.querySelector(".trendingProducts").append(div);
 });
+ }
+
+function handleSort(){
+   let selected = document.querySelector("#filter").value
+   if(selected=="HTL"){
+    // DECENDING
+    bag.products.sort((a,b)=>b.bag.price-a.bag.price)
+   }
+   if(selected=="LTH"){
+    // ACCENDING
+    bag.sort((a,b)=>a.bag.price-b.bag.price)
     
+   }
+
+   showProducts(bag)
 }
-
-
-
 
 
 

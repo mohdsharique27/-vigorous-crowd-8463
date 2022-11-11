@@ -9,12 +9,23 @@
         body{
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
+        #login-wrapper{
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+            height:100vh;
+            width:100vw;
+            background-color: rgba(0,0,0,0.5);
+        }
         .loginForm{
+            
             border: 1px solid black;
             width: 80%;
             margin: auto;
             height: 800px;
             display: flex;
+            background-color: white;
         }
         .loginForm>div{
             border: 1px solid red;
@@ -55,9 +66,13 @@
             font-size: 20px;
             width: 50%;
         }
+        .hide{
+            display:none;
+        }
     </style>
 </head>
 <body>
+    <div id="login-wrapper">
     <div class="loginForm">
         <div id="left-side">
             <h1>TRENDING ONE</h1>
@@ -76,7 +91,9 @@
             <input type="text" placeholder="Email"><br>
             <input type="password" placeholder="Password"><br>
             <button>SIGN UP</button>
+            <button id="close-popup">CLose</button>
         </div>
+    </div>
     </div>
 </body>
 </html>

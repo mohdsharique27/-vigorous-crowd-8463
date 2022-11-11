@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car tPage</title>
+    <link rel="stylesheet" href="fetch.css">
+</head>
+<body>
+     <div id="container"></div>
+</body>
+</html>
+
+<script>
+    let cartItems = JSON.parse(localStorage.getItem("cartProducts"))
+    console.log(cartItems);
+
+    displayCard(cartItems);
+
+    //for the sum of the products
+
+    let totalCost = cartItems.reduce((acc,elem)=> acc+elem.price,0)
+    console.log(totalCost)
+
+    function displayCard(cartItems){
+    document.querySelector("#container").innerHTML=""
+    cartItems.forEach(function(elem){
+
+        let div= document.createElement("div");
+
+        let imageproduct = document.createElement("img");
+        imageproduct.setAttribute("src", elem.image);
+
+        let title = document.createElement("h2");
+        title.innerText= elem.title
+
+        let des = document.createElement("p");
+        des.innerText= elem.description
+        let cost = document.createElement("p")
+        cost.innerText= elem.price
+
+        let rating = document.createElement("p");
+        rating.innerText= elem.rating.rate;
+
+        let cart_btn = document.createElement("button");
+        cart_btn.innerText="Add to Cart";
+
+      
+
+        div.append(imageproduct,title,des,rating,cost);
+
+        document.querySelector("#container").append(div)
+    });
+}
+</script>
